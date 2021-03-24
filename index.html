@@ -58,10 +58,49 @@
           <button type="button" class="button primary" data-modal-open> Заказать услугу</button>
         <div class="backdrop is-hidden" data-modal>
        <div class="modal">
-       <button class="close" data-modal-close> 
-         <svg class="modal-svg">
+       <button type="button" class="close" data-modal-close> 
+         <svg class="signup-svg">
           <use href="./images/sprite.svg#modal-close"></use>
-       </svg></button>
+         </svg></button>
+       <form action="" class="signup-form">
+         <h2 class="signup-heading">Оставьте свои данные, мы вам перезвоним</h2>
+         <label class="signup-field">
+           Имя
+           <span class="signup-form-input-wrapper">
+           <input name="user-name" class="signup-form-input" type="text">
+           <svg class="modal-icon">
+              <use href="./images/sprite.svg#modal-person"></use>
+            </svg>
+          </span>
+         </label>
+          <label class="signup-field">
+            Телефон
+            <span class="signup-form-input-wrapper">
+            <input name="user-phone" class="signup-form-input" type="tel">
+            <svg class="modal-icon">
+              <use href="./images/sprite.svg#modal-phone"></use>
+            </svg>
+            </span>
+          </label>
+          <label class="signup-field">
+            Почта
+            <span class="signup-form-input-wrapper">
+            <input name="user-mail" class="signup-form-input" type="email">
+            <svg class="modal-icon">
+              <use href="./images/sprite.svg#modal-mail"></use>
+            </svg>
+            </span>
+          </label>
+          <label class="signup-field">
+            Комментарий
+            <textarea name="user-massage" placeholder="Введите текст" class="signup-textarea"></textarea>
+          </label>
+          <span class="signup-term">
+           <input id="user-term" type="checkbox" name="user-term" class="signup-form-term visually-hidden">  
+           <label class="sig-form-term-desc" for="user-term"> Соглашаюсь с рассылкой и принимаю <a class="terms-link" href="">Условия договора</a></label>
+            </span>
+            <button type="submit" class="button signup-button">Отправить</button>
+       </form>
       </div>
      </div>
         </div>
