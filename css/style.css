@@ -54,6 +54,7 @@ footer {
   margin: 0 auto;
   width: 1200px;
 }
+
 .button {
   background-color: var(--secondary-background-color);
   color: var(--primary-text-color);
@@ -159,7 +160,7 @@ footer {
 
 .site-nav .link:hover,
 .site-nav .link:focus {
-  transition: all 0.25ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   color: var(--accent-text-color);
 }
 
@@ -190,7 +191,7 @@ footer {
 
 .auth-site .auth-block-link:hover,
 .auth-site .auth-block-link:focus {
-  transition: all 0.25ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   color: var(--accent-text-color);
 }
 
@@ -200,7 +201,7 @@ footer {
 
 .auth-block-link:focus .auth-icon,
 .auth-block-link:hover .auth-icon {
-  transition: all 0.25ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   color: var(--accent-text-color);
   fill: var(--accent-text-color);
 }
@@ -278,7 +279,7 @@ footer {
 }
 
 .modal {
-  position: relative;
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -363,6 +364,7 @@ footer {
 
 .advantage-info {
   position: relative;
+  z-index: -1;
 }
 
 .works {
@@ -496,13 +498,13 @@ li.team > p {
 
 .social-list-link:focus,
 .social-list-link:hover {
-  transition: all 0.25ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   background-color: var(--accent-text-color);
 }
 
 .social-list-link:focus .social-list-icon,
 .social-list-link:hover .social-list-icon {
-  transition: all 0.25ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   fill: var(--primary-white-color);
 }
 
@@ -557,13 +559,13 @@ li.team > p {
 
 .partner-list-item:hover .partner-list-icon,
 .partner-list-item:focus .partner-list-icon {
-  transition: all 0.25ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   fill: var(--accent-text-color);
 }
 
 .partner-list-item:hover,
 .partner-list-item:focus {
-  transition: all 0.25ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   border-color: var(--accent-text-color);
 }
 
@@ -609,7 +611,7 @@ li.team > p {
 
 .contacts .link:hover,
 .contacts .link:focus {
-  transition: all 0.25ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   color: var(--accent-text-color);
 }
 .footer .container {
@@ -653,13 +655,13 @@ li.team > p {
 
 .footer-list-link:focus,
 .footer-list-link:hover {
-  transition: all 0.25ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   background-color: var(--accent-text-color);
 }
 
 .footer-list-link:focus .footer-list-icon,
 .footer-list-link:hover .footer-list-icon {
-  transition: all 0.25ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   fill: var(--primary-white-color);
 }
 
@@ -677,8 +679,63 @@ li.team > p {
 }
 
 .contacts.footer {
+  width: 231px;
   margin-bottom: 60px;
 }
+
+.subscribe-box {
+  display: flex;
+  margin-top: 72px;
+}
+
+.subscribe-form-input {
+  width: 100%;
+  height: 50px;
+  box-sizing: border-box;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  background: none;
+  margin-right: 10px;
+  padding: 12px 16px;
+}
+
+.subscribe-social-box {
+  margin-top: 72px;
+  margin-left: 93px;
+  width: 100%;
+}
+
+.button.subscribe {
+  min-width: 200px;
+  min-height: 50px;
+  text-align: left;
+  padding-left: 29px;
+  background-color: var(--accent-text-color);
+  color: var(--primary-white-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+.subscribe-list-title {
+  display: flex;
+  margin-bottom: 20px;
+  width: 100%;
+  font-weight: 700;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primary-white-color);
+}
+
+.subscribe-social {
+  display: flex;
+}
+
 /* ======================PORTFOLIO======================= */
 
 .button-secondary {
@@ -715,7 +772,7 @@ li.team > p {
 
 .button-secondary:hover,
 .button-secondary:focus {
-  transition: all 0.25ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   color: var(--primary-white-color);
   background-color: var(--accent-text-color);
 }
@@ -764,14 +821,14 @@ li.team > p {
   line-height: 1.55;
   letter-spacing: 0.03em;
   transform: translateY(100%);
-  transition: all 0.25ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   text-align: left;
   padding: 63px 24px 63px 24px;
 }
 
 .project-list:hover .project-text,
 .project-list:focus .project-text {
-  transition: all 0.25ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   transform: translateY(0);
 }
 
@@ -781,7 +838,7 @@ li.team > p {
 
 .project-list:hover,
 .project-list:focus {
-  transition: all 0.25ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -939,6 +996,8 @@ li.team > p {
 }
 
 .signup-button {
+  display: block;
+  margin: 0 auto;
   width: 200px;
   height: 50px;
   border-radius: 4px;
@@ -949,4 +1008,14 @@ li.team > p {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
+}
+
+.subscribe-icon {
+  position: absolute;
+  padding-left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+
+  width: 24px;
+  height: 24px;
 }
